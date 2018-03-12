@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEkgUR6L_Ord-IsyqHbme6jMzTNSA-msE'></script>
+        <script src="../ctrl/custCtrl.js"></script>
+        <script src="../ctrl/mail.js"></script>
+        <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">   -->
+        </script>  
+      
+</head>
+
+<body ng-app="clientRegister" ng-controller="custControl">
+
+
+
+    
+
+
+    <div w3-include-html="\html\header.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <br>
+    <div id="upleft">
+        <button style="background-color: #4CAF50;" margin="auto" class="btn btn-primary btn-xl btn-block" type="button" ng-click="call()" >Find Nearest Doctor</button>
+        <br><br><br><th>Doctor Name</th>    <th><input type="text" style="font-size: 12pt; " readonly ng-model="minDistanceName" ><br><br><br>
+            <br><th>Phone Number</th>    <th><input type="text" style="font-size: 12pt; " readonly ng-model="minDistancePhone" ><br><br><br>       
+            
+                <button style="background-color: #4CAF50;" margin="auto" class="btn btn-primary btn-xl btn-block" type="button" ng-click="sendEmail()" >ALERT</button>
+            
+                
+        <!-- <div w3-include-html="\html\header1.html"></div> -->
+
+        <script>
+            w3.includeHTML();
+        </script>
+    </div>
+    <!-- <div id="upright"> -->
+
+        <h2> AVAILABLE DOCTORS NEARBY YOU</h2>
+
+        
+        <div align="center" id='gmap_canvas' style='height:483px;width:830px;'>
+
+        </div>
+
+        <script>
+            
+        </script>
+    </div>
+
+    <div id="footer">
+        <p>
+
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>

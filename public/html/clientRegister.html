@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="\ctrl\testControl.js"></script>
+    <script type="text/javascript" src='../js/angular-file-upload/angular-file-upload.min.js'></script> 
+    <link rel="stylesheet"  href="\stylesheets\style2.css" type="text/css">
+</head>
+<body ng-app="clientRegister" ng-controller="testControl">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDEkgUR6L_Ord-IsyqHbme6jMzTNSA-msE&libraries=places"></script>
+    <script type="text/javascript">
+    </script>
+    <tr>
+      <th><label>Doctor Name:</label></th>
+      <th><input type="text" name="Name" placeholder="Ex:Dr.Sam" ng-model="cust.name" required ><br>
+    </tr>
+    <tr>
+        <th><label>Description:</label></th>
+        <th><input type="text" name="Description" placeholder="Ex:About Doctor"  ng-model="cust.Description" required><br>
+    </tr>
+    <!-- <tr>
+        <th><label>logo:</label></th>
+        <!-- </th><input name="myFile" type="file" accept="image/png, image/jpeg" ng-file-select="onFileSelect($files)" /> <br> -->
+        <!-- <th><input type="file" ng-model="photo"
+            onchange="angular.element(this).scope().file_changed(this)"
+             accept="image/*"> </th> -->
+    <!-- </tr> -->
+    
+    
+    <tr>
+        <th><label>License ID:</label></th>
+        <th><input type="text" name="Domain" placeholder="Ex:ID" ng-model="cust.Domain" required><br>
+    </tr>
+    <tr>
+        <th><label>Phone:</label></th>
+        <th><input type="tel" name="Runtime" placeholder="Ex:9999999999" ng-model="cust.Runtime" required><br>
+    </tr>
+    
+    
+    <span>Address:</span>
+    <input type="text" id="txtPlaces" style="width: 250px" placeholder="Enter a location" ng-model="cust.place" required><br>
+    <button style="background-color: #4CAF50;" margin="auto" class="btn btn-primary btn-xl btn-block" type="submit" ng-click="send()" >Add</button>
+
+    
+  </body>
+</html>

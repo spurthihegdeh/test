@@ -1,0 +1,37 @@
+
+div.container
+{
+position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 350px;
+  background-color: white;
+  border-radius: 8px;
+	border: 2px solid blue;
+  border-color: black;
+}
+
+h2 {
+    text-align: center;
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3399ff;
+    text-align: center;
+}
+th, td {
+  padding: 5px;
+}
